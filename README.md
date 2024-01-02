@@ -91,6 +91,7 @@ I want to start a new python 3.12 project with a venv virtual environnement.
       set venv_folder=venv 
       ```
 4- I execute the Idle_3_12.bat and close Idle. Now the project look like this.
+        ```
       ├── MyProject
           ├── venv
           |   ├── Include
@@ -104,6 +105,7 @@ I want to start a new python 3.12 project with a venv virtual environnement.
           ├── Idle_3_12.bat
           ├── hello_world.py
           └── requirements.txt
+          ```
   5- I rename hello_world.py -> app.py
   6- I modify the file main_idle_file.txt and replace hello_world.py -> app.py
   7- I execute 01_venv_cmd.bat. In the resulting cmd prompt, I install the package numpy I need to the virtual environnement with the command "pip install numpy" then close it.
@@ -113,11 +115,12 @@ I want to start a new python 3.12 project with a venv virtual environnement.
   set app=app.py
   ```
   10- The final version of the project that will be zipped looks like this:
-          ├── MyProject
-              ├── Idle_3_12.bat
-              ├── app.py
-              └── requirements.txt
-
+          ```
+          ├── MyProject              <br />
+              ├── Idle_3_12.bat      <br />
+              ├── app.py             <br />
+              └── requirements.txt   <br />
+              ```
 
 ### Scenario 2: 
 
@@ -137,19 +140,19 @@ My grandfather, who as never used internet or python, want to be able to see the
       print(datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
 5- I execute the Idle_37_DoobleClic_then_F5_for_Date.bat and close Idle. Now the project look like this.
       ```
-      ├── DoobleClic_to_open_PythonProgram_Date
-          ├── venv
-          |   ├── Include
-          |   ├── Lib
-          |   ├── Scripts
-          |   ├── 01_venv_cmd.bat
-          |   ├── 02_install_requirements.bat
-          |   ├── 03_save_requirements.bat
-          |   ├── main_idle_file.txt
-          |   └── pyvenv.cfg
-          ├── Idle_37_DoobleClic_then_F5_for_Date.bat
-          ├── print_date_v1.py
-          └── requirements.txt
+      ├── DoobleClic_to_open_PythonProgram_Date             <br />
+          ├── venv                                          <br />
+          |   ├── Include                                   <br />
+          |   ├── Lib                                       <br />
+          |   ├── Scripts                                   <br />
+          |   ├── 01_venv_cmd.bat                           <br />
+          |   ├── 02_install_requirements.bat               <br />
+          |   ├── 03_save_requirements.bat                  <br />
+          |   ├── main_idle_file.txt                        <br />
+          |   └── pyvenv.cfg                                <br />
+          ├── Idle_37_DoobleClic_then_F5_for_Date.bat       <br />
+          ├── print_date_v1.py                              <br />
+          └── requirements.txt                              <br />
         ```
 6- Since I really want the numpy module to be available just in case, I execute 01_venv_cmd.bat. In the resulting cmd prompt, 
    I install the numpy package to the virtual environnement with the command "pip install numpy" then close it.
