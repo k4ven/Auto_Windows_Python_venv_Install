@@ -113,7 +113,7 @@ set language=FR
   
   6- I modify the file main_idle_file.txt and replace hello_world.py -> app.py 
   
-  7- I execute 01_venv_cmd.bat. In the resulting cmd prompt, I install the package numpy I need to the virtual environnement with the command "pip install numpy" then close it. 
+  7- I execute 01_venv_cmd.bat. In the resulting cmd prompt, I install the package numpy in the virtual environnement with the command "pip install numpy" then close it. 
   
   8- Every time I install a new package, I execute 03_save_requirements.bat. 
   
