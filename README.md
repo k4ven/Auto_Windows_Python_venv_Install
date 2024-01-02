@@ -96,10 +96,10 @@ I want to start a new python 3.12 project with a venv virtual environnement.
 1- I create my project directory named "MyProject".
 2- In the main project folder, I download Idle_3_10.bat and rename it Idle_3_12.bat.
 3- I configure the Idle_3_12.bat file like this:
-      set app=hello_world.py
-      set py_version=Python312    
-      set version=3.12.1        
-      set venv_folder=venv 
+     > set app=hello_world.py
+     > set py_version=Python312    
+     > set version=3.12.1        
+     > set venv_folder=venv 
 4- I execute the Idle_3_12.bat and close Idle. Now the project look like this.
       ├── MyProject
           ├── venv
@@ -119,7 +119,7 @@ I want to start a new python 3.12 project with a venv virtual environnement.
   7- I execute 01_venv_cmd.bat. In the resulting cmd prompt, I install the package numpy I need to the virtual environnement with the command "pip install numpy" then close it.
   8- Every time I install a new package, I execute 03_save_requirements.bat.
   9- When the project is ready to share, I delete the directory "venv" and I configure the Idle_3_12.bat file like this:
-          set app=app.py      
+          >set app=app.py      
   10- The final version of the project that will be zipped looks like this:
           ├── MyProject
               ├── Idle_3_12.bat
