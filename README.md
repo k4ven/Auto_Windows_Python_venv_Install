@@ -22,10 +22,10 @@ to install and use custom python programs on Windows with the Idle interpreter w
 
 6- Press F5 or select Run/Run Module in Idle menu to execute the python app with Idle.
 
-Bonus : -Use 01_venv_cmd.bat to install packages in the environnement. (Ex: pip install numpy)  
-        -Use 02_install_requirements.bat to install python packages from requirements.txt.  
-        -Use 03_save_requirements.bat to overwrite requirements.txt with the python packages installed in the environnement.  
-        -Useless examples available at the end of this file.  
+        - Use 01_venv_cmd.bat to install packages in the environnement. (Ex: pip install numpy)  
+        - Use 02_install_requirements.bat to install python packages from requirements.txt.  
+        - Use 03_save_requirements.bat to overwrite requirements.txt with the python packages installed in the environnement.  
+        - Useless examples available at the end of this file.  
       
 
 ##  How to configure the .bat file (Idle_3_10.bat or Idle_3_XX.bat.)                     
@@ -33,18 +33,18 @@ Bonus : -Use 01_venv_cmd.bat to install packages in the environnement. (Ex: pip 
 1- Open the Idle_3_XX.bat for edition. (Right clic -> edit)
 
 2- Configure the variables at the beginning of the Idle_3_XX.bat file.
-      ```
-      set app=hello_world.py      --> The filename of the python app, in the same folder as Idle_3_XX.bat, that needs to be open with Idle.   
-                                      Modification is also possible in the file main_idle_file.txt after installation.   
-      set py_version=Python310    --> Python installation folder string. Normally Python3 + Version. In Windows cmd, use "where python" to validate.   
-      set version=3.10.11         --> Python version to be installed if py_version do not exist.  
-      set venv_folder=venv        --> Name of the virtual environnement folder created with <path_to_python.exe> -m venv <folder_name>. (Example: venv or venv_3.XX)   
-      set language=FR             --> FR for French et EN pour English   
-      ```
+      
+      set app=hello_world.py      --> The filename of the python app, in the same folder as Idle_3_XX.bat, that needs to be open with Idle. 
+                                     Modification is also possible in the file main_idle_file.txt after installation. 
+                                    set py_version=Python310    --> Python installation folder string. Normally Python3 + Version. In Windows cmd, use "where python" to validate. 
+      set version=3.10.11         --> Python version to be installed if py_version do not exist. 
+      set venv_folder=venv        --> Name of the virtual environnement folder created with <path_to_python.exe> -m venv <folder_name>. (Example: venv or venv_3.XX) 
+      set language=EN             --> FR for French & EN pour Anglais 
+      
       
 3- Save the changes.
 
-4- (optional) : Add a requirements.txt file in the same folder as Idle_3_XX.bat to install dependencies when executed.
+4- (optional) : Add a requirements.txt file in the same folder as Idle_3_XX.bat to install dependencies when executed the first time.
 
 
 
@@ -85,9 +85,9 @@ I want to start a new python 3.12 project with a venv virtual environnement.
 2- In the main project folder, I download Idle_3_10.bat and rename it Idle_3_12.bat.
 3- I configure the Idle_3_12.bat file like this:
         ```
-      set app=hello_world.py   
-      set py_version=Python312       
-      set version=3.12.1          
+      set app=hello_world.py 
+      set py_version=Python312 
+      set version=3.12.1 
       set venv_folder=venv   
       ```
 4- I execute the Idle_3_12.bat and close Idle. Now the project look like this.
