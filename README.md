@@ -74,11 +74,11 @@ Bonus : -Use 01_venv_cmd.bat to install packages in the environnement. (Ex: pip 
 
 
 
-*********************************************
-***             Useless examples          ***
-*********************************************
+##  Useless examples      
 
-*** Scenario 1: ***
+
+### Scenario 1: 
+
 I want to start a new python 3.12 project with a venv virtual environnement.
 
 1- I create my project directory named "MyProject".
@@ -119,23 +119,24 @@ I want to start a new python 3.12 project with a venv virtual environnement.
               └── requirements.txt
 
 
-*** Scenario 2: ***
+### Scenario 2: 
+
 My grandfather, who as never used internet or python, want to be able to see the date and time with Python 3.7.
 
 1- I create my project directory named "DoobleClic_to_open_PythonProgram_Date"
 2- In the main project folder I download Idle_3_10.bat and rename it Idle_37_DoobleClic_then_F5_for_Date.bat.
 3- I configure the Idle_37_DoobleClic_then_F5_for_Date.bat file like this:
-```
-set app=print_date_v1.py
-set py_version=Python37    
-set version=3.7.8        
-set venv_folder=venv
-```
+        ```
+        set app=print_date_v1.py
+        set py_version=Python37    
+        set version=3.7.8        
+        set venv_folder=venv
+        ```
 4- In the project directory, I add the python program named print_date_v1.py that contain 2 lines of code.
       Import datetime
       print(datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
 5- I execute the Idle_37_DoobleClic_then_F5_for_Date.bat and close Idle. Now the project look like this.
-```
+      ```
       ├── DoobleClic_to_open_PythonProgram_Date
           ├── venv
           |   ├── Include
@@ -149,18 +150,18 @@ set venv_folder=venv
           ├── Idle_37_DoobleClic_then_F5_for_Date.bat
           ├── print_date_v1.py
           └── requirements.txt
-```
+        ```
 6- Since I really want the numpy module to be available just in case, I execute 01_venv_cmd.bat. In the resulting cmd prompt, 
    I install the numpy package to the virtual environnement with the command "pip install numpy" then close it.
 7- To apply the newly installed package numpy to the requirements.txt file, I execute 03_save_requirements.bat.
    The requirements.txt file now contain the line "numpy==1.26.2".
 8- I prepare the delivery version of the project by deleting the directory "venv". Now the project look like this.
-```
+        ```
           ├── DoobleClic_to_open_PythonProgram_Date
               ├── Idle_37_DoobleClic_then_F5_for_Date.bat
               ├── print_date_v1.py
               └── requirements.txt
-```
+        ```
 9- The first time my grangfather execute Idle_37_DoobleClic_then_F5_for_Date.bat, python3.7 will be installed with 
    the virtual environnement and the required packages before opening Idle. After that, only Idle will open.
    
