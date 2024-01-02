@@ -1,14 +1,14 @@
 # Auto_Windows_Python_venv_Install
-Installation of a version of python on a Windows computer and creation of the virtual environnement (venv), this from a .bat file.
+
+## Intended Usage
+
+Installation of a version of python on a Windows computer, creation of the virtual environnement (venv) and Idle interpreter execution, this from a .bat file.
 
 The intent is to allow people without programming experience or python experience or python interest or computer experience 
 to install and use custom python programs on Windows with the Idle interpreter without almost no tutorials or packages version management.
 
 
-
-****************************************
-***           How to use             ***
-****************************************
+## How to use            
 
 1- Copy the Idle_3_XX.bat in the directory of your python project
 
@@ -28,39 +28,27 @@ Bonus : -Use 01_venv_cmd.bat to install packages in the environnement. (Ex: pip 
         -Useless examples available at the end of this file.
       
 
-
-****************************************************************************************************
-***        How to configure the .bat file (Idle_3_10.bat, or Idle_3_XX.bat.)                     ***
-****************************************************************************************************
+##  How to configure the .bat file (Idle_3_10.bat or Idle_3_XX.bat.)                     
 
 1- Open the Idle_3_XX.bat for edition. (Right clic -> edit)
 
 2- Configure the variables at the beginning of the Idle_3_XX.bat file.
+      ```
       set app=hello_world.py      --> The filename of the python app, in the same folder as Idle_3_XX.bat, that needs to be open with Idle. 
                                       Modification is also possible in the file main_idle_file.txt after installation.
       set py_version=Python310    --> Python installation folder string. Normally Python3 + Version. In Windows cmd, use "where python" to validate.
       set version=3.10.11         --> Python version to be installed if py_version do not exist.
       set venv_folder=venv        --> Name of the virtual environnement folder created with <path_to_python.exe> -m venv <folder_name>. (Example: venv or venv_3.XX)
+      set language=FR             --> FR for French et EN pour English
+      ```
+      
+3- Save the changes.
 
-3- In the name of my ignorance, the french and english versions are hard coded. Remove or add REM in front of the lines under "REM Language Config" to select the language.
-      Example (French):
-              REM Language Config
-              echo ***   Python %version% n'est pas present. Le telechargement va debuter.
-              REM echo ***   Python %version% is not present. Download will start shortly.  
-      Example (English):
-              REM Language Config
-              REM echo ***   Python %version% n'est pas present. Le telechargement va debuter.
-              echo ***   Python %version% is not present. Download will start shortly.  
-
-4- Save the changes.
-
-5- (optional) : Add a requirements.txt file in the same folder as Idle_3_XX.bat to install dependencies when executed.
+4- (optional) : Add a requirements.txt file in the same folder as Idle_3_XX.bat to install dependencies when executed.
 
 
 
-***************************************************
-***           How the .bat file works           ***
-***************************************************
+## How the .bat file works           
 
 1- Create the virtual environnement directory if it do not exist.
 
