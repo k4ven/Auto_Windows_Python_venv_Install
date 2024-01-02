@@ -5,7 +5,7 @@
 Installation of a version of python on a Windows computer, creation of the virtual environnement (venv) and Idle interpreter execution, this from a .bat file.
 
 The intent is to allow people without programming experience or python experience or python interest or computer experience 
-to install and use custom python programs on Windows with the Idle interpreter without almost no tutorials or packages version management.
+to install and use custom python programs on Windows with the Idle interpreter with almost no tutorials or packages version management.
 
 
 ## How to use            
