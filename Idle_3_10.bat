@@ -107,7 +107,7 @@ if not %app%== hello_world.py (GOTO:SkipHelloWorld)
 REM Hello_world.py file creation
 echo( > %cd%\hello_world.py
 echo def main(): >> %cd%\hello_world.py
-echo     print(f'Hello World !') >> %cd%\hello_world.py
+echo     print('Hello World !') >> %cd%\hello_world.py
 echo( >> %cd%\hello_world.py
 echo if __name__ == '__main__': >> %cd%\hello_world.py
 echo     main() >> %cd%\hello_world.py
